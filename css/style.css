@@ -4,7 +4,7 @@ body{
 }
 
 h1{
-    color: red
+    color: rgb(240, 23, 23)
 }
 
 table{
@@ -25,10 +25,49 @@ th{
     border: 3px solid black;
     font-weight: bolder;
     margin: auto;
-    color: goldenrod
+    color: rgb(219, 161, 15)
 }
 
 h2{
-    color: green
+    color: rgb(18, 233, 18)
 }
 
+h1 + p{
+    color: blueviolet;
+}
+
+table ~ p{
+    color:blue
+}
+
+tr.toinen > td{
+    background-color: rgb(35, 175, 175);
+}
+
+th:hover{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: palegreen;
+
+}
+
+p:second-child{
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+tr.kolmas td:first-child{
+    background-color: brown;
+}
+
+tr.neljäs td:nth-child(2){
+    background-color: brown;
+}
+
+tr.viides td:last-child{
+    background-color: brown;
+}
+
+p::first-letter{
+    color: grey;
+}
